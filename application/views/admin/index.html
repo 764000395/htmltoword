@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>河南河大文化艺术交流有限公司后台管理</title>
+	<link rel="stylesheet" href="<?php echo base_url('style/admin'); ?>/css/admin.css" />
+	<link rel="stylesheet" href="<?php echo base_url('style/admin'); ?>/css/public.css"/>
+	<script type="text/javascript" src="<?php echo base_url('style/admin');?>/js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="<?php echo base_url('style/admin');?>/js/admin.js"></script>
+<!-- 默认打开目标 -->
+<base target="iframe"/>
+</head>
+<body>
+<!-- 头部 -->
+	<div id="top_box">
+		<div id="top">
+			<p id="top_font">河南大学数学与统计学院季刊投稿系统后台管理首页</p>
+		</div>
+		<div class="top_bar">
+			<p class="adm">
+				<span>管理员：</span>
+				<span class="adm_pic">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span class="adm_people">[ HENU ]</span>
+			</p>
+			<p class="now_time">
+				今天是：2013.7.13
+				您的当前位置是：
+				<span>首页</span>
+			</p>
+			<p class="out">
+				<span class="out_bg">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+				<a href="<?php echo site_url('admin/login/logout')?>" target="_self">退出</a>
+			</p>
+		</div>
+	</div>
+<!-- 左侧菜单 -->
+		<div id="left_box">
+			<p class="use">常用菜单</p>
+			<div class="menu_box">
+				<h2>管理员设置</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a target="_blank" href="<?php echo base_url('')?>" class="pos">前台首页</a>        	
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/edit_password'); ?>" class="pos">密码修改</a>				        	
+				        </li> 
+				    </ul>
+				</div>
+			</div>
+
+			<!-- 首页管理 BEGIN -->
+			<div class="menu_box">
+				<h2>首页管理</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/big_slider_manage/list')?>" class="pos">大轮播图</a>
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/service/list/'); ?>" class="pos">服务理念</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/consult/list/'); ?>" class="pos">咨询方式</a>	
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- 首页管理 END -->
+
+			<!-- 主营业务 BEGIN -->
+			<div class="menu_box">
+				<h2>主营业务</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/video_list/list/0')?>" class="pos">视频制作</a>
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/metting_education/会议筹备/list/'); ?>" class="pos">会议筹备</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/metting_education/教育培训/list/'); ?>" class="pos">教育培训</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/main_business_introduce/5/see'); ?>" class="pos">视频制作介绍</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/main_business_introduce/6/see'); ?>" class="pos">会议筹备介绍</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/main_business_introduce/7/see'); ?>" class="pos">教育培训介绍</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/defaut_image/list/')?>" class="pos">默认图片</a>
+				        </li> 
+				    </ul>
+				</div>
+			</div>
+			<!-- 主营业务 END -->
+
+			<!-- 最新动态 BEGIN -->
+			<div class="menu_box">
+				<h2>最新动态</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/news/最新动态/list')?>" class="pos">动态列表</a>
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/news/最新动态/see_add/'); ?>" class="pos">添加动态</a>	
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- 最新动态 END -->
+
+			<!-- 工作要览 BEGIN-->
+			<div class="menu_box">
+				<h2>工作要览</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/news/工作要览/list')?>" class="pos">要览列表</a>
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?php echo site_url('admin/admin/news/工作要览/see_add/'); ?>" class="pos">添加要览</a>	
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- 工作要蓝 END-->
+
+			<!-- 其他栏目 BEGIN -->
+			<!--  -->
+			<div class="menu_box">
+				<h2>其他栏目</h2>
+				<div class="text">
+					<ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/other/1/see')?>" class="pos">关于我们</a>
+				        </li> 
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/other/2/see');?>" class="pos">联系我们</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/other/3/see');?>" class="pos">合作伙伴</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/other/4/see');?>" class="pos">加入我们</a>	
+				        </li>
+				    </ul>
+				    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="<?=site_url('admin/admin/leave_msg/list/0/');?>" class="pos">在线留言</a>	
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- 其他栏目 END -->
+		</div>
+		<!-- 右侧 -->
+		<div id="right">
+			<iframe  frameboder="0" border="0" 	scrolling="yes" name="iframe" src="<?php echo site_url('admin/admin/copy');?>"></iframe>
+		</div>
+	<!-- 底部 -->
+	<div id="foot_box">
+		<div class="foot">
+			<p>@Copyright © <script>document.write((new Date()).getFullYear());</script> 河南河大文化艺术交流有限公司 All Rights Reserved. 京ICP备0000000号</p>
+		</div>
+	</div>
+
+</body>
+</html>
+<!--[if IE 6]>
+    <script type="text/javascript" src="./js/iepng.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.adm_pic, #left_box .pos, .span_server, .span_people', 'background');
+    </script>
+<![endif]-->
